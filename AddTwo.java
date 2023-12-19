@@ -3,6 +3,8 @@
  */
 public class AddTwo {
 	public static void main(String[] args) {
-		// Put your code here	
+		int x=1;
+		System.out.println(x+x);	
 	}
+
 }
