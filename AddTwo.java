@@ -3,8 +3,10 @@
  */
 public class AddTwo {
 	public static void main(String[] args) {
-		int x=1;
-		System.out.println(x+x);	
+		int First_number=1;
+		int Second_number=3;
+		System.out.println("The result of adding"+" "+First_number+" to"+ " "+ Second_number+" is: "+ (First_number+Second_number));	
+
 	}
 
 }
