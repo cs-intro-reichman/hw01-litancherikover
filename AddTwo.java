@@ -3,9 +3,12 @@
  */
 public class AddTwo {
 	public static void main(String[] args) {
-		int First_number=1;
-		int Second_number=3;
-		System.out.println("The result of adding"+" "+First_number+" to"+ " "+ Second_number+" is: "+ (First_number+Second_number));	
+		int First_number = Integer.parseInt(args[0]);
+		int Second_number = Integer.parseInt(args[1]);
+
+		int sum = First_number + Second_number;
+
+		System.out.println(First_number + " + " + Second_number + " = " + sum);	
 
 	}
 
