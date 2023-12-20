@@ -5,13 +5,12 @@
 public class Coins {
 	public static void main(String[] args) 
 	{
-		int Total_cents=56;
-		int quarters = Total_cents / 25;
-        int remainingCents = Total_cents % 25;
+		int totalCents = Integer.parseInt(args[0]);
 
-        // Print the result
-        System.out.println("Quarters: " + quarters);
-        System.out.println("Remaining cents: " + remainingCents);
+		int quarters = totalCents / 25;
+		int remainingCents = totalCents % 25;
 
+		System.out.println("Quarters: " + quarters);
+		System.out.println("Remaining Cents: " + remainingCents);
 	}
 }
