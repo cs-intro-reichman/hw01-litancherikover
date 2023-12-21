@@ -11,13 +11,17 @@ public class Triangle {
 		int side2 = Integer.parseInt(args[1]);
 		int side3 = Integer.parseInt(args[2]);
 
-		if ((side1 + side2 > side3) && (side1 + side3 > side2) && (side2 + side3 > side1)) 
+		// Format and print the result
+		System.out.print(side1 + ", " + side2 + ", " + side3 + ": ");
+
+		// Check if the sides can form a triangle
+		if ((side1 + side2 > side3) && (side1 + side3 > side2) && (side2 + side3 > side1))
 		{
-			System.out.println("The sides may create a triangle.");
+			System.out.println("true");
 		} 
 		else 
 		{
-		System.out.println("The sides may not create a triangle.");
-		}	
+			System.out.println("false");
+		}
 	}
 }
