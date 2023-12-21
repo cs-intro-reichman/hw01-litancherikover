@@ -3,19 +3,20 @@
  * This is known as the Triangle Inequality Theorem. 
  * Write a program that tests if three given integers form a triangle.
  */ 
-public class Triangle {
+public class Triangle 
+{
 	public static void main(String[] args) 
 	{
 		/*Here we are getting the given numbers */
-		int side1 = Integer.parseInt(args[0]);
-		int side2 = Integer.parseInt(args[1]);
-		int side3 = Integer.parseInt(args[2]);
+		int First_side = Integer.parseInt(args[0]);
+		int Second_side = Integer.parseInt(args[1]);
+		int Third_side = Integer.parseInt(args[2]);
 
-		// Format and print the result
-		System.out.print(side1 + ", " + side2 + ", " + side3 + ": ");
+		/*Here, I am printing the side values */
+		System.out.print(First_side + ", " + Second_side + ", " + Third_side + ": ");
 
-		// Check if the sides can form a triangle
-		if ((side1 + side2 > side3) && (side1 + side3 > side2) && (side2 + side3 > side1))
+		/*Here, I am checking the triangle Inequality Theorem */
+		if ((First_side + Second_side > Third_side) && (First_side + Third_side > Second_side) && (Second_side + Third_side > First_side))
 		{
 			System.out.println("true");
 		} 
