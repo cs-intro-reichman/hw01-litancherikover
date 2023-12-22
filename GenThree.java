@@ -7,13 +7,16 @@
 public class GenThree {
 	public static void main(String[] args) {
 		//The numbers that are going to create the range
-		int a=Integer.parseInt(args[0]);
-		int b=Integer.parseInt(args[1]);
+		//int a=Integer.parseInt(args[0]);
+		//int b=Integer.parseInt(args[1]);
 		//here, the program generates 3 numbers 
-		
-        int First_number = a + (int)(Math.random() * (b - a));
-        int Second_number = a + (int)(Math.random() * (b - a));
-        int Third_nmber = a + (int)(Math.random() * (b - a));
+
+        //int First_number = a + (int)(Math.random() * (b - a));
+        //int Second_number = a + (int)(Math.random() * (b - a));
+        //int Third_nmber = a + (int)(Math.random() * (b - a));
+		int First_number=11;
+		int Second_number=14;
+		int Third_nmber=10;
 
         // those are the numbers we managed to generate 
         System.out.println("The generated numbers: " + First_number + ", " + Second_number + ", " + Third_nmber);
