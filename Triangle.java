@@ -19,7 +19,7 @@ public class Triangle
 		} 
 		else 
 		{
-			System.out.println(First_side+", "+Second_side+", "+Third_side+":false");
+			System.out.println(First_side+", "+Second_side+", "+Third_side+": false");
 		}
 	}
 }
