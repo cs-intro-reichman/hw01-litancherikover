@@ -9,7 +9,6 @@ public class GenThreeTest {
     }
 
     public static void testGenThree(String min, String max) {
-        //I don't know where this file came from.
         int count = 0;
 
         while (count < 5) {
