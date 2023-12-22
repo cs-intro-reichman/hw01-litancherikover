@@ -7,22 +7,19 @@ public class Triangle
 {
 	public static void main(String[] args) 
 	{
-		/*Here we are getting the given numbers */
+		/*Here we are getting the values of each of the sides */
 		int First_side = Integer.parseInt(args[0]);
 		int Second_side = Integer.parseInt(args[1]);
 		int Third_side = Integer.parseInt(args[2]);
 
-		/*Here, I am printing the side values */
-		System.out.print(First_side + ", " + Second_side + ", " + Third_side + ": ");
-
-		/*Here, I am checking the triangle Inequality Theorem */
+		/*Here, the program checks the triangle Inequality Theorem */
 		if ((First_side + Second_side > Third_side) && (First_side + Third_side > Second_side) && (Second_side + Third_side > First_side))
 		{
-			System.out.println("true");
+			System.out.println(First_side+", "+Second_side+", "+Third_side+": true");
 		} 
 		else 
 		{
-			System.out.println("false");
+			System.out.println(First_side+", "+Second_side+", "+Third_side+":false");
 		}
 	}
 }
