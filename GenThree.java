@@ -6,25 +6,15 @@
 
 public class GenThree {
 	public static void main(String[] args) {
-		//The numbers that are going to create the range
-		//int a=Integer.parseInt(args[0]);
-		//int b=Integer.parseInt(args[1]);
-		//here, the program generates 3 numbers 
-
-        //int First_number = a + (int)(Math.random() * (b - a));
-        //int Second_number = a + (int)(Math.random() * (b - a));
-        //int Third_nmber = a + (int)(Math.random() * (b - a));
-		int First_number=11;
-		int Second_number=14;
-		int Third_nmber=10;
-
-        // those are the numbers we managed to generate 
-        System.out.println("The generated numbers: " + First_number + ", " + Second_number + ", " + Third_nmber);
-
-        // we are going to use the min funcion in order to use the minimal number
-        int Minimal_number = Math.min(Math.min(First_number, Second_number), Third_nmber);
-
-        // printing the minimal number
-        System.out.println("The minimal number: " + Minimal_number);	
+		int first = Integer.parseInt(args[0]);
+        int second = Integer.parseInt(args[1]);
+        int first_number =(int) (Math.random()*(second-first))+first;
+        int Second_number = (int) (Math.random()*(second-first))+first;
+        int third_nunmber = (int) (Math.random()*(second-first))+first;
+        int min = Math.min (first_number, (Math.min(Second_number,third_nunmber)));
+        System.out.println(first_number);
+        System.out.println(Second_number);
+        System.out.println(third_nunmber);
+        System.out.println("The minimal generated number was " + min);
 	}
 }
