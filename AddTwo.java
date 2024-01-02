@@ -4,13 +4,14 @@
 public class AddTwo 
 {
 	public static void main(String[] args) {
+		// #feedback: in java we start variable names with a non-capital letters.
 		// here, the program gets two given numbers 
-		int First_number = Integer.parseInt(args[0]);
-		int Second_number = Integer.parseInt(args[1]);
+		int first_number = Integer.parseInt(args[0]);
+		int second_number = Integer.parseInt(args[1]);
 		//here, the progran adds the numbers 
-		int sum = First_number + Second_number;
+		int sum = first_number + second_number;
 		//we print the results
-		System.out.println(First_number + " + " + Second_number + " = " + sum);	
+		System.out.println(first_number + " + " + second_number + " = " + sum);	
 	}
 
 }
