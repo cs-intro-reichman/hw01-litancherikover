@@ -8,18 +8,18 @@ public class Triangle
 	public static void main(String[] args) 
 	{
 		/*Here we are getting the values of each of the sides */
-		int First_side = Integer.parseInt(args[0]);
-		int Second_side = Integer.parseInt(args[1]);
-		int Third_side = Integer.parseInt(args[2]);
+		// #feedback: in java we start variable names with a non-capital letters.
+		int first_side = Integer.parseInt(args[0]);
+		int second_side = Integer.parseInt(args[1]);
+		int third_side = Integer.parseInt(args[2]);
 
 		/*Here, the program checks the triangle Inequality Theorem */
-		if ((First_side + Second_side > Third_side) && (First_side + Third_side > Second_side) && (Second_side + Third_side > First_side))
-		{
-			System.out.println(First_side+", "+Second_side+", "+Third_side+": true");
-		} 
-		else 
-		{
-			System.out.println(First_side+", "+Second_side+", "+Third_side+": false");
-		}
+		/* #fedback:
+  		   since the only difference between the scopes of if\else is that resulted condition inside the if,
+       		   it might be better to store the result of this condition in a boolean variable than use it to print the value.
+	           In that way you avoid multiply your code.
+		*/
+		boolean isTriangle = (first_side + second_side > third_side) && (first_side + third_side > second_side) && (second_side + third_side > first_side);
+		System.out.println(first_side+", "+second_side+", "+third_side+": "+ isTriangle);
 	}
 }
